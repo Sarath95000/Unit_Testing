@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!-- saved from url=(0019)http://hvdi-009/bd/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Happy (Belated) Birthday, Gayathri! 🎉</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ffdde1 0%, #ee9ca7 25%, #d9afd9 50%, #97d9e1 75%, #ffe29f 100%);
+    background-size: 400% 400%;
+    animation: bgShift 18s ease infinite;
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: #4a2c40;
+  }
+  @keyframes bgShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .confetti {
+    position: fixed;
+    top: -10px;
+    z-index: 3;
+    pointer-events: none;
+    animation: fall linear infinite;
+    opacity: 0.9;
+  }
+  @keyframes fall {
+    0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(110vh) rotate(360deg); opacity: 0.7; }
+  }
+
+  .container {
+    position: relative;
+    z-index: 2;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 50px 24px 90px;
+    text-align: center;
+  }
+
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.75);
+    backdrop-filter: blur(6px);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #b3446c;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    margin-bottom: 28px;
+    border: 1px solid rgba(255,255,255,0.6);
+  }
+
+  h1 {
+    font-size: 3.2rem;
+    margin: 0 0 6px;
+    background: linear-gradient(90deg, #ff5e7e, #ff9a76, #b967ff, #ff5e7e);
+    background-size: 300% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 6s linear infinite;
+    text-shadow: 0 4px 20px rgba(255,255,255,0.3);
+  }
+  @keyframes shine {
+    to { background-position: 300% center; }
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+    color: #6b3f5c;
+    font-weight: 500;
+    margin-bottom: 40px;
+  }
+
+  .cake {
+    font-size: 5rem;
+    margin: 10px 0 30px;
+    animation: bounce 2.2s ease-in-out infinite;
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.15));
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0) rotate(-3deg); }
+    50% { transform: translateY(-18px) rotate(3deg); }
+  }
+
+  .card {
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 28px;
+    padding: 38px 34px;
+    margin: 26px 0;
+    box-shadow: 0 15px 40px rgba(150, 60, 100, 0.18);
+    text-align: left;
+    line-height: 1.75;
+    font-size: 1.08rem;
+    color: #4a2c40;
+    position: relative;
+    border: 1px solid rgba(255,255,255,0.7);
+    transform: rotate(-0.4deg);
+  }
+  .card:nth-of-type(even) { transform: rotate(0.4deg); }
+
+  .card p { margin: 0 0 16px; }
+  .card p:last-child { margin-bottom: 0; }
+
+  .highlight {
+    background: linear-gradient(120deg, rgba(255,214,165,0.6) 0%, rgba(255,182,193,0.6) 100%);
+    padding: 2px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+
+  .funny-tag {
+    display: inline-block;
+    background: #fff3cd;
+    color: #8a6d00;
+    font-size: 0.82rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    margin: 18px 0 12px;
+    border: 1px dashed #e6b800;
+  }
+
+  .signature {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #b3446c;
+  }
+
+  .divider {
+    font-size: 1.6rem;
+    letter-spacing: 12px;
+    margin: 36px 0;
+    opacity: 0.7;
+  }
+
+  .footer-note {
+    margin-top: 50px;
+    font-size: 0.95rem;
+    color: #7a4d6b;
+    opacity: 0.85;
+  }
+
+  .balloons {
+    position: absolute;
+    font-size: 2.5rem;
+    animation: floatUp 6s ease-in-out infinite;
+    z-index: 1;
+    pointer-events: none;
+  }
+  @keyframes floatUp {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-30px); }
+  }
+
+  .btn {
+    margin-top: 34px;
+    display: inline-block;
+    background: linear-gradient(90deg, #ff6b9d, #c86dd7);
+    color: white;
+    padding: 16px 36px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 10px 25px rgba(200, 100, 180, 0.4);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    border: none;
+  }
+  .btn:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(200, 100, 180, 0.5);
+  }
+
+  .surprise-box {
+    margin-top: 20px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #8a3f6b;
+    min-height: 30px;
+    transition: opacity 0.4s ease;
+  }
+
+  @media (max-width: 600px) {
+    h1 { font-size: 2.2rem; }
+    .subtitle { font-size: 1.05rem; }
+    .card { padding: 26px 20px; font-size: 1rem; }
+    .cake { font-size: 3.6rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <div class="badge">💐 Better Late Than Never Presents... 💐</div>
+
+  <h1>Happy Birthday, Gayathri! 🎉✨</h1>
+  <p class="subtitle">A very <em>fashionably late</em> celebration, exactly the way legends do it.</p>
+
+  <div class="cake">🎂🥳🎈</div>
+
+  <div class="card">
+    <p>Okay so, technically your birthday was back in <span class="highlight">December</span>, and it is currently very much <span class="highlight">not December</span> anymore. But great friendships don't run on calendars, they run on chaos and love and clearly, so does my sense of timing. 😅</p>
+    <p>So consider this the <strong>Director's Cut</strong> of your birthday wish. Longer, more emotional, and arriving several months after the theatrical release.</p>
+  </div>
+
+  <div class="funny-tag">⚠️ Belated Wish Alert Proceed With Cake ⚠️</div>
+
+  <div class="card">
+    <p>It still makes me smile that we were in the <span class="highlight">same company for 3 whole years</span> and somehow only actually met last year. Three years! We basically ghosted each other in the same building like two WiFi signals that refused to connect. 📶😄</p>
+    <p>But the moment we finally did meet, that was it you became one of the most special people in my life. Turns out the universe just really loves a good plot twist.</p>
+  </div>
+
+  <div class="card">
+    <p>You are that <strong>rare kind of friend</strong> the one who truly cares, listens without judgment, and somehow always knows the right words to lift me up. The compliments, the support, the understanding they mean more to me than you'll ever know.</p>
+    <p>Honestly, you should charge a consultation fee for how good you are at making people feel better. I'd pay in coffee and unnecessary memes. ☕😂</p>
+  </div>
+
+  <div class="card">
+    <p>You're the only person at work who knows the <em>real</em> me all the good parts and the not-so-good ones and still chooses to stand by me. That kind of bond is priceless. No refunds, no exchanges, no complaints department needed. 💖</p>
+  </div>
+
+  <div class="card">
+    <p>And <strong>Arun</strong>... you couldn't have chosen a better partner. He's just like you humble, genuine, and kind. Together, you both radiate warmth and positivity, and it's truly beautiful to see. Honestly, the two of you are basically a public service announcement for "relationship goals." 🥰</p>
+    <p>Also, huge respect to Arun for handling both your birthday AND my belated wish situation with such grace. That man deserves a medal. 🏅</p>
+  </div>
+
+  <div class="divider">🎈 🎂 🎈</div>
+
+  <div class="card">
+    <p>May this year (the part of it that's left, anyway) bring you endless happiness, peace, success, and all the love you deserve. May your cake always be bigger than your problems and your WiFi always faster than mine. 📶🍰</p>
+    <p>I'm genuinely grateful to have you as my friend. and i want you and arun to travel with me throught my life as a good friend, Stay amazing, stay you.</p>
+    <p class="signature">Happy Birthday once again fashionably late, but wholeheartedly meant. 💐💖</p>
+  </div>
+
+  <button class="btn" onclick="surprise()">Click for a Belated Birthday Blessing 🎁</button>
+  <div class="surprise-box" id="surpriseBox"></div>
+
+  <div class="footer-note">Made with love, a guilty conscience about the timing, and way too many emojis. 🎉</div>
+
+</div>
+
+<script>
+  // Confetti generator
+  const colors = ['#ff6b9d','#ffd93d','#6bcBff','#c86dd7','#7ee8a8','#ff9a76'];
+  const shapes = ['🎉','🎊','✨','💖','🎈'];
+  const container = document.body;
+  function spawnConfetti(n) {
+    for (let i = 0; i < n; i++) {
+      const el = document.createElement('div');
+      el.className = 'confetti';
+      const useEmoji = Math.random() > 0.5;
+      if (useEmoji) {
+        el.textContent = shapes[Math.floor(Math.random() * shapes.length)];
+        el.style.fontSize = (14 + Math.random() * 16) + 'px';
+      } else {
+        el.style.width = el.style.height = (6 + Math.random() * 8) + 'px';
+        el.style.background = colors[Math.floor(Math.random() * colors.length)];
+        el.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
+      }
+      el.style.left = Math.random() * 100 + 'vw';
+      el.style.animationDuration = (4 + Math.random() * 4) + 's';
+      el.style.animationDelay = (Math.random() * 5) + 's';
+      container.appendChild(el);
+      setTimeout(() => el.remove(), 10000);
+    }
+  }
+  spawnConfetti(35);
+  setInterval(() => spawnConfetti(8), 3000);
+
+  // Floating balloons in background
+  const balloonEmojis = ['🎈','🎈','🎈'];
+  const positions = [['5%','20%'],['90%','15%'],['12%','75%'],['85%','70%'],['50%','5%']];
+  positions.forEach((pos, i) => {
+    const b = document.createElement('div');
+    b.className = 'balloons';
+    b.textContent = balloonEmojis[i % balloonEmojis.length];
+    b.style.left = pos[0];
+    b.style.top = pos[1];
+    b.style.animationDelay = (i * 1.3) + 's';
+    document.body.appendChild(b);
+  });
+
+  const blessings = [
+    "May your Wi-Fi be strong and your coffee stronger. ☕📶",
+    "May you find money in old jacket pockets all year long. 💸",
+    "May your snacks never run out mid-Netflix-binge. 🍿",
+    "May Arun always let you pick the restaurant. 😄",
+    "May every Monday feel like a Friday this year. 🎉",
+    "May your birthday cake calories not count (they never do). 🎂"
+  ];
+  function surprise() {
+    const box = document.getElementById('surpriseBox');
+    const pick = blessings[Math.floor(Math.random() * blessings.length)];
+    box.style.opacity = 0;
+    setTimeout(() => {
+      box.textContent = pick;
+      box.style.opacity = 1;
+      spawnConfetti(20);
+    }, 200);
+  }
+</script><div class="confetti" style="font-size: 14.5286px; left: 93.4996vw; animation-duration: 6.61516s; animation-delay: 4.03126s;">🎊</div><div class="confetti" style="height: 13.117px; width: 13.117px; background: rgb(255, 217, 61); border-radius: 50%; left: 12.4987vw; animation-duration: 5.03353s; animation-delay: 0.619172s;"></div><div class="confetti" style="height: 7.93503px; width: 7.93503px; background: rgb(107, 203, 255); border-radius: 50%; left: 84.611vw; animation-duration: 5.41802s; animation-delay: 0.475506s;"></div><div class="confetti" style="height: 10.8681px; width: 10.8681px; background: rgb(255, 154, 118); border-radius: 50%; left: 31.3718vw; animation-duration: 4.148s; animation-delay: 0.845549s;"></div><div class="confetti" style="font-size: 18.4158px; left: 7.9096vw; animation-duration: 4.88696s; animation-delay: 3.55976s;">🎈</div><div class="confetti" style="font-size: 29.4813px; left: 8.16338vw; animation-duration: 6.69463s; animation-delay: 0.768822s;">🎉</div><div class="confetti" style="font-size: 15.7216px; left: 58.4411vw; animation-duration: 5.64866s; animation-delay: 0.413766s;">✨</div><div class="confetti" style="height: 10.0367px; width: 10.0367px; background: rgb(107, 203, 255); border-radius: 50%; left: 23.549vw; animation-duration: 4.86459s; animation-delay: 2.43859s;"></div><div class="confetti" style="font-size: 25.3713px; left: 48.4393vw; animation-duration: 7.62935s; animation-delay: 0.131639s;">🎈</div><div class="confetti" style="font-size: 19.8167px; left: 9.96939vw; animation-duration: 7.36238s; animation-delay: 2.52686s;">🎈</div><div class="confetti" style="height: 8.16496px; width: 8.16496px; background: rgb(126, 232, 168); border-radius: 50%; left: 98.9832vw; animation-duration: 4.91023s; animation-delay: 2.06749s;"></div><div class="confetti" style="font-size: 25.9785px; left: 15.2729vw; animation-duration: 6.74044s; animation-delay: 4.2051s;">✨</div><div class="confetti" style="height: 8.38884px; width: 8.38884px; background: rgb(255, 154, 118); border-radius: 50%; left: 32.9952vw; animation-duration: 5.89037s; animation-delay: 2.48733s;"></div><div class="confetti" style="height: 11.9055px; width: 11.9055px; background: rgb(126, 232, 168); border-radius: 2px; left: 96.0933vw; animation-duration: 7.63645s; animation-delay: 2.56539s;"></div><div class="confetti" style="font-size: 29.6943px; left: 41.5759vw; animation-duration: 5.97776s; animation-delay: 2.70626s;">🎈</div><div class="confetti" style="height: 9.13843px; width: 9.13843px; background: rgb(255, 217, 61); border-radius: 2px; left: 83.9183vw; animation-duration: 5.20667s; animation-delay: 1.03915s;"></div><div class="confetti" style="font-size: 18.7823px; left: 94.8045vw; animation-duration: 5.1272s; animation-delay: 4.48644s;">✨</div><div class="confetti" style="height: 8.84323px; width: 8.84323px; background: rgb(200, 109, 215); border-radius: 50%; left: 11.2254vw; animation-duration: 5.92706s; animation-delay: 4.47705s;"></div><div class="confetti" style="height: 8.00868px; width: 8.00868px; background: rgb(200, 109, 215); border-radius: 2px; left: 17.6364vw; animation-duration: 7.95524s; animation-delay: 4.80249s;"></div><div class="confetti" style="font-size: 24.7371px; left: 28.6304vw; animation-duration: 4.91747s; animation-delay: 1.60402s;">🎉</div><div class="confetti" style="font-size: 22.7527px; left: 64.1935vw; animation-duration: 4.03121s; animation-delay: 0.360208s;">🎉</div><div class="confetti" style="font-size: 15.1455px; left: 1.76738vw; animation-duration: 6.53754s; animation-delay: 3.82576s;">🎉</div><div class="confetti" style="height: 10.115px; width: 10.115px; background: rgb(107, 203, 255); border-radius: 50%; left: 9.45474vw; animation-duration: 7.1468s; animation-delay: 3.36682s;"></div><div class="confetti" style="height: 9.24748px; width: 9.24748px; background: rgb(107, 203, 255); border-radius: 50%; left: 42.6279vw; animation-duration: 6.73831s; animation-delay: 1.25297s;"></div><div class="confetti" style="height: 9.16315px; width: 9.16315px; background: rgb(126, 232, 168); border-radius: 2px; left: 86.9244vw; animation-duration: 6.6366s; animation-delay: 3.56666s;"></div><div class="confetti" style="font-size: 22.451px; left: 46.2294vw; animation-duration: 7.791s; animation-delay: 4.93261s;">✨</div><div class="confetti" style="font-size: 15.3228px; left: 4.75559vw; animation-duration: 6.95793s; animation-delay: 1.09517s;">💖</div><div class="confetti" style="font-size: 28.1494px; left: 61.3263vw; animation-duration: 4.7947s; animation-delay: 3.86069s;">🎈</div><div class="confetti" style="height: 11.9378px; width: 11.9378px; background: rgb(126, 232, 168); border-radius: 50%; left: 5.35766vw; animation-duration: 7.12842s; animation-delay: 2.01293s;"></div><div class="confetti" style="height: 8.72566px; width: 8.72566px; background: rgb(200, 109, 215); border-radius: 2px; left: 7.65495vw; animation-duration: 5.44222s; animation-delay: 4.76372s;"></div><div class="confetti" style="height: 12.947px; width: 12.947px; background: rgb(200, 109, 215); border-radius: 2px; left: 54.1528vw; animation-duration: 5.09127s; animation-delay: 0.744269s;"></div><div class="confetti" style="height: 12.2549px; width: 12.2549px; background: rgb(200, 109, 215); border-radius: 2px; left: 0.481861vw; animation-duration: 5.90651s; animation-delay: 0.617663s;"></div><div class="confetti" style="font-size: 22.4129px; left: 6.30707vw; animation-duration: 5.28168s; animation-delay: 0.0808179s;">✨</div><div class="confetti" style="height: 9.01495px; width: 9.01495px; background: rgb(107, 203, 255); border-radius: 2px; left: 27.3667vw; animation-duration: 6.76636s; animation-delay: 0.251957s;"></div><div class="confetti" style="font-size: 20.8922px; left: 30.24vw; animation-duration: 5.33718s; animation-delay: 0.412439s;">🎉</div><div class="balloons" style="left: 5%; top: 20%; animation-delay: 0s;">🎈</div><div class="balloons" style="left: 90%; top: 15%; animation-delay: 1.3s;">🎈</div><div class="balloons" style="left: 12%; top: 75%; animation-delay: 2.6s;">🎈</div><div class="balloons" style="left: 85%; top: 70%; animation-delay: 3.9s;">🎈</div><div class="balloons" style="left: 50%; top: 5%; animation-delay: 5.2s;">🎈</div>
+
+
+
+<div class="confetti" style="height: 13.0844px; width: 13.0844px; background: rgb(255, 154, 118); border-radius: 2px; left: 30.2369vw; animation-duration: 6.89235s; animation-delay: 3.95664s;"></div><div class="confetti" style="font-size: 15.7635px; left: 80.9449vw; animation-duration: 4.84343s; animation-delay: 1.75524s;">🎊</div><div class="confetti" style="height: 13.5346px; width: 13.5346px; background: rgb(255, 217, 61); border-radius: 50%; left: 58.826vw; animation-duration: 5.09936s; animation-delay: 1.30402s;"></div><div class="confetti" style="height: 11.5732px; width: 11.5732px; background: rgb(255, 154, 118); border-radius: 2px; left: 12.6645vw; animation-duration: 6.41284s; animation-delay: 0.0998632s;"></div><div class="confetti" style="height: 13.7224px; width: 13.7224px; background: rgb(200, 109, 215); border-radius: 50%; left: 11.0212vw; animation-duration: 7.95257s; animation-delay: 1.48577s;"></div><div class="confetti" style="height: 13.7924px; width: 13.7924px; background: rgb(255, 154, 118); border-radius: 2px; left: 58.5696vw; animation-duration: 7.8576s; animation-delay: 3.33482s;"></div><div class="confetti" style="height: 7.70091px; width: 7.70091px; background: rgb(255, 107, 157); border-radius: 2px; left: 31.6693vw; animation-duration: 4.44029s; animation-delay: 2.08173s;"></div><div class="confetti" style="font-size: 17.5258px; left: 21.4135vw; animation-duration: 7.40432s; animation-delay: 1.82334s;">🎉</div><div class="confetti" style="height: 11.5451px; width: 11.5451px; background: rgb(255, 217, 61); border-radius: 50%; left: 51.6234vw; animation-duration: 7.93185s; animation-delay: 0.0556273s;"></div><div class="confetti" style="height: 10.7339px; width: 10.7339px; background: rgb(200, 109, 215); border-radius: 2px; left: 12.0338vw; animation-duration: 4.92876s; animation-delay: 3.95642s;"></div><div class="confetti" style="font-size: 18.1715px; left: 6.73558vw; animation-duration: 5.66425s; animation-delay: 3.98172s;">💖</div><div class="confetti" style="font-size: 15.363px; left: 26.9608vw; animation-duration: 5.77659s; animation-delay: 2.69885s;">🎊</div><div class="confetti" style="height: 6.18459px; width: 6.18459px; background: rgb(255, 217, 61); border-radius: 2px; left: 93.5123vw; animation-duration: 6.95306s; animation-delay: 4.90142s;"></div><div class="confetti" style="height: 10.5534px; width: 10.5534px; background: rgb(126, 232, 168); border-radius: 50%; left: 67.6667vw; animation-duration: 5.44917s; animation-delay: 0.879346s;"></div><div class="confetti" style="font-size: 17.0628px; left: 10.3021vw; animation-duration: 4.46034s; animation-delay: 4.57263s;">🎈</div><div class="confetti" style="height: 8.82815px; width: 8.82815px; background: rgb(255, 154, 118); border-radius: 50%; left: 78.806vw; animation-duration: 4.73152s; animation-delay: 3.08903s;"></div></body></html>
